@@ -2,7 +2,7 @@
 Easy event binding to MIDI events in Chrome.
 
 ##enable MIDI
-[chrome://flags/#enable-web-midi]
+chrome://flags/#enable-web-midi
 
 ##usage
 ```javascript
