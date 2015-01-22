@@ -15,13 +15,13 @@ Meedee.on('any', function(value, event){
 ```javascript
 //example slider at input 0, MIDI range is 0..127
 Meedee.on(0, function(value){
-	console.log('slider at:', 127 / 100 * value, '%');
+	console.log('slider at:', 100 / 127 * value, '%');
 });
 ```
 
 ```javascript
 //example button at input 32, MIDI range is 0..127
 Meedee.on(32, function(value, event){
-	console.log('button is ', (value === 127) ? 'on' : 'off', event.receivedTime);
+	console.log('button is', (value === 127) ? 'on' : 'off', 'receivedTime:', event.receivedTime);
 });
 ```
